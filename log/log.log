@@ -12,3 +12,34 @@
 2021-08-24 14:42:40,578 INFO [root] [test_cnode_api.py (test_edit_topic:42] - 添加功能-success为: True
 2021-08-24 14:42:41,240 INFO [root] [test_cnode_api.py (test_edit_topic:56] - 编辑功能-状态码为: 200
 2021-08-24 14:42:41,240 INFO [root] [test_cnode_api.py (test_edit_topic:57] - 编辑功能-success为: True
+2021-08-24 16:27:59,282 INFO [root] [test_cnode_api.py (test_collect_de_topic:77] - 收藏贴子-状态码为: 200
+2021-08-24 16:27:59,282 INFO [root] [test_cnode_api.py (test_collect_de_topic:78] - 收藏贴子-success为: True
+2021-08-24 16:27:59,824 INFO [root] [test_cnode_api.py (test_collect_de_topic:85] - 取消收藏贴子-状态码为: 200
+2021-08-24 16:27:59,824 INFO [root] [test_cnode_api.py (test_collect_de_topic:86] - 取消收藏贴子-success为: True
+2021-08-24 16:29:01,283 INFO [root] [test_cnode_api.py (test_collect_de_topic:77] - 收藏贴子-状态码为: 200
+2021-08-24 16:29:01,283 INFO [root] [test_cnode_api.py (test_collect_de_topic:78] - 收藏贴子-success为: True
+2021-08-24 16:29:01,889 INFO [root] [test_cnode_api.py (test_collect_de_topic:85] - 取消收藏贴子-状态码为: 200
+2021-08-24 16:29:01,890 INFO [root] [test_cnode_api.py (test_collect_de_topic:86] - 取消收藏贴子-success为: True
+2021-08-24 16:31:53,214 INFO [root] [test_cnode_api.py (test_query_collect_all:100] - 收藏的所有贴子-状态码为: 404
+2021-08-24 16:32:57,260 INFO [root] [test_cnode_api.py (test_query_collect_all:100] - 收藏的所有贴子-状态码为: 404
+2021-08-24 16:33:48,919 INFO [root] [test_cnode_api.py (test_query_collect_all:100] - 收藏的所有贴子-状态码为: 404
+2021-08-24 16:35:07,684 INFO [root] [test_cnode_api.py (test_query_collect_all:100] - 收藏的所有贴子-状态码为: 200
+2021-08-24 16:35:22,619 INFO [root] [test_cnode_api.py (test_query_collect_all:100] - 收藏的所有贴子-状态码为: 200
+2021-08-24 16:37:02,618 INFO [root] [test_cnode_api.py (test_view_reply:118] - 评论贴子-状态码为: 200
+2021-08-24 16:37:02,618 INFO [root] [test_cnode_api.py (test_view_reply:119] - 评论贴子-评论id为: 6124afaefe0c51b7c2ae6ebe
+2021-08-24 16:37:03,460 INFO [root] [test_cnode_api.py (test_view_reply:135] - 回复评论-状态码为: 200
+2021-08-24 16:37:03,460 INFO [root] [test_cnode_api.py (test_view_reply:136] - 回复评论-回复的id为: 6124afaffe0c51bb8fae6ebf
+2021-08-24 16:44:42,349 INFO [root] [test_cnode_api.py (test_raise_reply:149] - 点赞-状态码为: 401
+2021-08-24 16:45:34,498 INFO [root] [test_cnode_api.py (test_raise_reply:149] - 点赞-状态码为: 401
+2021-08-24 16:47:00,523 INFO [root] [test_cnode_api.py (test_raise_reply:149] - 点赞-状态码为: 401
+2021-08-24 16:47:56,922 INFO [root] [test_cnode_api.py (test_raise_reply:149] - 点赞-状态码为: 401
+2021-08-24 16:48:46,018 INFO [root] [test_cnode_api.py (test_raise_reply:150] - 点赞-状态码为: 401
+2021-08-24 16:49:59,011 INFO [root] [test_cnode_api.py (test_raise_reply:152] - 点赞-状态码为: 200
+2021-08-24 16:49:59,011 INFO [root] [test_cnode_api.py (test_raise_reply:153] - 点赞-状态为(up--赞 or down--取消赞): up
+2021-08-24 16:49:59,736 INFO [root] [test_cnode_api.py (test_raise_reply:156] - 点赞-状态为(up--赞 or down--取消赞): down
+2021-08-24 16:57:12,308 INFO [root] [test_cnode_api.py (test_query_no_msg_count:170] - 未读消息-状态码为: 200
+2021-08-24 16:57:12,308 INFO [root] [test_cnode_api.py (test_query_no_msg_count:171] - 未读消息-未读消息数量为: 7
+2021-08-24 16:57:42,413 INFO [root] [test_cnode_api.py (test_query_no_msg_count:171] - 未读消息-状态码为: 200
+2021-08-24 16:57:42,413 INFO [root] [test_cnode_api.py (test_query_no_msg_count:172] - 未读消息-未读消息数量为: 7
+2021-08-24 17:01:09,347 INFO [root] [test_cnode_api.py (test_query_message:188] - 系统消息-状态码为: 200
+2021-08-24 17:01:09,347 INFO [root] [test_cnode_api.py (test_query_message:189] - 系统消息-消息类型为: {'has_read_messages': [], 'hasnot_read_messages': [{'id': '6123bbc7fe0c518564ae6d21', 'type': 'reply', 'has_read': False, 'author': {'loginname': 'lph0913', 'avatar_url': 'https://avatars.githubusercontent.com/u/68153551?v=4&s=120'}, 'topic': {'id': '612359cffe0c51c69aae6bfb', 'title': 'test 211', 'last_reply_at': '2021-08-23T15:16:23.454Z'}, 'reply': {'id': '6123bbc7fe0c51ad4cae6d20', 'content': '<p>[@lph0913aaa](/user/lph0913aaa)</p>', 'ups': [], 'create_at': '2021-08-23T15:16:23.451Z'}, 'create_at': '2021-08-23T15:16:23.455Z'}, {'id': '6123bbc7fe0c5165b1ae6d1f', 'type': 'reply', 'has_read': False, 'author': {'loginname': 'lph0913', 'avatar_url': 'https://avatars.githubusercontent.com/u/68153551?v=4&s=120'}, 'topic': {'id': '612359cffe0c51c69aae6bfb', 'title': 'test 211', 'last_reply_at': '2021-08-23T15:16:23.454Z'}, 'reply': {'id': '6123bbc7fe0c510fdcae6d1e', 'content': '<p>[@lph0913aaa](/user/lph0913aaa)</p>', 'ups': [], 'create_at': '2021-08-23T15:16:23.441Z'}, 'create_at': '2021-08-23T15:16:23.445Z'}, {'id': '6123bbc7fe0c51017aae6d1d', 'type': 'reply', 'has_read': False, 'author': {'loginname': 'lph0913', 'avatar_url': 'https://avatars.githubusercontent.com/u/68153551?v=4&s=120'}, 'topic': {'id': '612359cffe0c51c69aae6bfb', 'title': 'test 211', 'last_reply_at': '2021-08-23T15:16:23.454Z'}, 'reply': {'id': '6123bbc7fe0c516256ae6d1c', 'content': '<p>[@lph0913aaa](/user/lph0913aaa)</p>', 'ups': [], 'create_at': '2021-08-23T15:16:23.256Z'}, 'create_at': '2021-08-23T15:16:23.260Z'}, {'id': '6123bbc7fe0c51630dae6d1b', 'type': 'reply', 'has_read': False, 'author': {'loginname': 'lph0913', 'avatar_url': 'https://avatars.githubusercontent.com/u/68153551?v=4&s=120'}, 'topic': {'id': '612359cffe0c51c69aae6bfb', 'title': 'test 211', 'last_reply_at': '2021-08-23T15:16:23.454Z'}, 'reply': {'id': '6123bbc7fe0c510e3aae6d1a', 'content': '<p>[@lph0913aaa](/user/lph0913aaa)</p>', 'ups': [], 'create_at': '2021-08-23T15:16:23.037Z'}, 'create_at': '2021-08-23T15:16:23.041Z'}, {'id': '6123bbc4fe0c5157c2ae6d19', 'type': 'reply', 'has_read': False, 'author': {'loginname': 'lph0913', 'avatar_url': 'https://avatars.githubusercontent.com/u/68153551?v=4&s=120'}, 'topic': {'id': '612359cffe0c51c69aae6bfb', 'title': 'test 211', 'last_reply_at': '2021-08-23T15:16:23.454Z'}, 'reply': {'id': '6123bbc4fe0c51218bae6d18', 'content': '<p>[@lph0913aaa](/user/lph0913aaa)</p>', 'ups': [], 'create_at': '2021-08-23T15:16:20.031Z'}, 'create_at': '2021-08-23T15:16:20.037Z'}, {'id': '6123bbbffe0c51b2e6ae6d17', 'type': 'reply', 'has_read': False, 'author': {'loginname': 'lph0913', 'avatar_url': 'https://avatars.githubusercontent.com/u/68153551?v=4&s=120'}, 'topic': {'id': '612359cffe0c51c69aae6bfb', 'title': 'test 211', 'last_reply_at': '2021-08-23T15:16:23.454Z'}, 'reply': {'id': '6123bbbffe0c51f02fae6d16', 'content': '<p>[@lph0913aaa](/user/lph0913aaa)</p>', 'ups': [], 'create_at': '2021-08-23T15:16:15.339Z'}, 'create_at': '2021-08-23T15:16:15.344Z'}, {'id': '612396fafe0c510b27ae6caa', 'type': 'reply', 'has_read': False, 'author': {'loginname': 'lph0913', 'avatar_url': 'https://avatars.githubusercontent.com/u/68153551?v=4&s=120'}, 'topic': {'id': '612359cffe0c51c69aae6bfb', 'title': 'test 211', 'last_reply_at': '2021-08-23T15:16:23.454Z'}, 'reply': {'id': '612396fafe0c51bacfae6ca9', 'content': '<p>aaa</p>', 'ups': [], 'create_at': '2021-08-23T12:39:22.611Z'}, 'create_at': '2021-08-23T12:39:22.616Z'}]}

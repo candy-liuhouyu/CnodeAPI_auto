@@ -11,17 +11,17 @@ import json
 import requests
 import action
 
-
 api_create_topic = action.BASE_URL + "topics"
 api_edit_topic = action.BASE_URL + "topics/update"
 api_query_home = action.BASE_URL + "topics"
 api_query_topic = action.BASE_URL + "topic/"
 api_collect_topic = action.BASE_URL + "topic_collect/collect"
 api_de_collect_topic = action.BASE_URL + "topic_collect/de_collect"
-api_query_collect = action.BASE_URL + "topic_collect/"
+api_collect_all = action.BASE_URL + "topic_collect/"
 api_create_view = action.BASE_URL + "topic/:topic_id/replies"
 api_query_user = action.BASE_URL + "user/"
 api_query_message = action.BASE_URL + "messages"
+api_no_msg_count = action.BASE_URL + "message/count"
 
 
 # 接口实现
@@ -51,7 +51,7 @@ def query_home_index(para_data):
     :param para_data: 请求参数
     :return:
     """
-    r = requests.get(api_query_home,params=para_data)
+    r = requests.get(api_query_home, params=para_data)
     return r
 
 
@@ -71,7 +71,7 @@ def collect_topic(param_data):
     :param param_data:
     :return:
     """
-    r = requests.post(api_collect_topic,param_data)
+    r = requests.post(api_collect_topic, param_data)
     return r
 
 
@@ -81,7 +81,7 @@ def de_collect(param_data):
     :param param_data:
     :return:
     """
-    r = requests.post(api_de_collect_topic,param_data)
+    r = requests.post(api_de_collect_topic, param_data)
     return r
 
 
@@ -91,18 +91,18 @@ def collect_all(user_name):
     :param user_name:
     :return:
     """
-    r = requests.get(api_query_collect,user_name)
+    r = requests.get(api_collect_all + user_name)
     return r
 
 
-def add_review(tid,param_data):
+def add_review(tid, param_data):
     """
     创建评论和回复
     :param tid:
     :param param_data:
     :return:
     """
-    r = requests.post(action.BASE_URL + "topic/" + tid + "/replies",param_data)
+    r = requests.post(action.BASE_URL + "topic/" + tid + "/replies", param_data)
     return r
 
 
@@ -123,7 +123,16 @@ def query_user(username):
     :param username:
     :return:
     """
-    r = requests.get(api_query_user,username)
+    r = requests.get(api_query_user, username)
+    return r
+
+
+def query_no_read_message(param):
+    """
+    查询未读消息数
+    :return:
+    """
+    r = requests.get(api_no_msg_count, param)
     return r
 
 
@@ -133,6 +142,5 @@ def query_message(param_data):
     :param param_data:
     :return:
     """
-    r = requests.get(api_query_message,param_data)
+    r = requests.get(api_query_message, param_data)
     return r
-
