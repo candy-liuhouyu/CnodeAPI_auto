@@ -1,0 +1,14 @@
+2021-08-24 11:33:30,327 INFO [root] [test_add_post.py (test_create_topic:33] - 添加功能-状态码为: 401
+2021-08-24 11:33:30,335 INFO [root] [test_add_post.py (test_create_topic:34] - 添加功能-是否生成topic_id: 错误的accessToken
+2021-08-24 11:33:30,612 INFO [root] [test_add_post.py (test_create_topic:33] - 添加功能-状态码为: 400
+2021-08-24 11:33:30,612 INFO [root] [test_add_post.py (test_create_topic:34] - 添加功能-是否生成topic_id: 标题不能为空
+2021-08-24 11:33:30,882 INFO [root] [test_add_post.py (test_create_topic:33] - 添加功能-状态码为: 400
+2021-08-24 11:33:30,882 INFO [root] [test_add_post.py (test_create_topic:34] - 添加功能-是否生成topic_id: 必须选择一个版块
+2021-08-24 11:33:31,151 INFO [root] [test_add_post.py (test_create_topic:33] - 添加功能-状态码为: 400
+2021-08-24 11:33:31,151 INFO [root] [test_add_post.py (test_create_topic:34] - 添加功能-是否生成topic_id: 内容不可为空
+2021-08-24 14:28:21,970 INFO [root] [test_cnode_api.py (test_update_topic:27] - 添加功能-状态码为: 200
+2021-08-24 14:28:21,970 INFO [root] [test_cnode_api.py (test_update_topic:28] - 添加功能-是否生成topic_id: 612359cffe0c51c69aae6bfb
+2021-08-24 14:42:40,578 INFO [root] [test_cnode_api.py (test_edit_topic:41] - 添加功能-状态码为: 200
+2021-08-24 14:42:40,578 INFO [root] [test_cnode_api.py (test_edit_topic:42] - 添加功能-success为: True
+2021-08-24 14:42:41,240 INFO [root] [test_cnode_api.py (test_edit_topic:56] - 编辑功能-状态码为: 200
+2021-08-24 14:42:41,240 INFO [root] [test_cnode_api.py (test_edit_topic:57] - 编辑功能-success为: True
